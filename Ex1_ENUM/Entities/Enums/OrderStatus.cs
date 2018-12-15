@@ -9,7 +9,7 @@ namespace Ex1_ENUM.Entities.Enums
     enum OrderStatus : int
     {
         PendingPayment = 0,
-        Procssing = 1,
+        Processing = 1,
         Shipped = 2,
         Delivered = 3
     }

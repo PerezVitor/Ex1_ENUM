@@ -17,6 +17,14 @@ namespace Ex1_ENUM
 
             Console.WriteLine(order);
 
+            string novoStatus1 = OrderStatus.Processing.ToString();
+
+            Console.WriteLine(novoStatus1);
+
+            OrderStatus novoStatus2 = (OrderStatus)Enum.Parse(typeof(OrderStatus), "Shipped");
+
+            Console.WriteLine(novoStatus2);
+                
             Console.ReadLine();
         }
     }
