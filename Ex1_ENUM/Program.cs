@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Ex1_ENUM.Entities;
+using Ex1_ENUM.Entities.Enums;
 
 namespace Ex1_ENUM
 {
@@ -10,6 +8,16 @@ namespace Ex1_ENUM
     {
         static void Main(string[] args)
         {
+            Order order = new Order()
+            {
+                Id = 1502,
+                Moment = DateTime.Now,
+                Status = OrderStatus.PendingPayment            
+            };
+
+            Console.WriteLine(order);
+
+            Console.ReadLine();
         }
     }
 }
